@@ -37,9 +37,12 @@
 // function flatten(arr) {
 //   let flattened = [];
 //   (function flat(arr) {
-//     arr.forEach(function (el) {
-//       if (Array.isArray(el)) flat(el);
-//       else flattened.push(el);
+//     arr.forEach((el) => {
+//       if (Array.isArray(el)) {
+//         flat(el);
+//       } else {
+//         flattened.push(el);
+//       }
 //     });
 //   })(arr);
 //   return console.log(flattened);
